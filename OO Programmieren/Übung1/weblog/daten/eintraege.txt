@@ -1,0 +1,12 @@
+a:3:{i:0;a:4:{s:5:"titel";s:24:"Blindheit per Definition";s:11:"erstellt_am";i:1574082282;s:5:"autor";s:7:"inewton";s:6:"inhalt";s:559:"Mit Blindheit per Definition geschlagen, dennoch nicht unsichtbar, 
+                              präsentiere ich mich als unbeachtetes und ungeliebtes Stiefkind 
+                              zeitgenössischer Literatur. Meine Bestimmung liegt - wie ich selbst -
+                              in engen Grenzen und ist rein platzhalterischer Natur.
+
+                              Kann ein missbrauchtes Wortgefüge eigentlich noch Schlimmeres erleiden, 
+                              als als Blindtext erdacht und vor der Öffentlichkeit versteckt zu werden?";}i:1;a:4:{s:5:"titel";s:10:"Langweilig";s:11:"erstellt_am";i:1574082282;s:5:"autor";s:7:"jsartre";s:6:"inhalt";s:224:"Dies ist ein Blindtext. Blindtexte sind zumeist weder informativ noch interessant, 
+                              sondern ausgesprochen langweilig.
+                              
+                              So auch dieser.";}i:2;a:4:{s:5:"titel";s:18:"Wenn ich gross bin";s:11:"erstellt_am";i:1574082282;s:5:"autor";s:6:"ghegel";s:6:"inhalt";s:262:"Ich bin nur ein kleiner Blindtext. Wenn ich gross bin, will ich Ulysses 
+                              von James Joyce werden. Aber jetzt lohnt es sich noch nicht, mich weiterzulesen. 
+                              Denn vorerst bin ich nur ein kleiner Blindtext.";}}
