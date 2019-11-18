@@ -1,0 +1,140 @@
+/*
+PC Design
+*/
+
+.Start{
+    background-image: url("../Images/mainPic.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    text-align: center;
+    line-height: 100%;
+}
+
+/*
+Computer Design
+*/
+
+header{
+    position: fixed !important;
+    top: 0;
+}
+.main-header{
+    top: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: #343840;
+    z-index: 97;
+}
+.main-header-list{
+    width: 100%;
+    list-style: none;
+    color: white !important;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px grey;
+}
+
+.navigation-text{
+       color: white !important;
+}
+.main-header-list-item{
+    display: inline-block; 
+    text-align: center;
+    padding: 0rem 1rem 0rem 1rem;
+    transition: 0.5s ease-in;
+}
+
+.main-header-list-item:last-child{
+    float: right;
+}
+.main-header-list-item:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+/*
+Smartphone Design
+*/
+.smart-header{
+    display: none;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    background-color: #343840;
+      transition: 0.5s ease-in;
+      z-index: 97;
+}
+.smart-header-list{
+    width: 100%;
+    list-style: none;
+    color: white !important;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px grey;
+}
+
+.smart-header-list-item{
+    display: inline-block; 
+    text-align: center;
+    padding: 0rem 1rem 0rem 1rem;
+    transition: 0.5s ease-in;
+}
+.drp-header-list-item:hover{
+     background-color: rgba(255,255,255,0.5);
+}
+.smart-header-list-item:last-child{
+    float: right;
+}
+.smart-header-list-item:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.navigation-dropdown{
+    border-top: 1px solid white;
+    overflow: hidden;
+    top: 60px;
+    position: absolute;
+    width: 100%;
+    height:0px;
+    padding: 0;
+    margin: 0;
+    z-index: 3;
+    transition: 0.5s ease-in;
+    background-color: #343840;
+    color: white;
+    font-size: 30px;
+}
+.drp-header-list-item {
+    display:block; 
+    float: left; 
+    padding-left: 5%; 
+    width: 95%; 
+    cursor: pointer;
+}
+.navigation-dropdown li:first-child{
+  margin-top: 30px;
+}
+.toggle-show-smart-menu{
+    height:280px !important;
+}
+.lighter-background{
+       background-color: #807D7D;
+}
+@media (max-width: 850px){
+    .main-header{
+        display: none;
+    }
+    .smart-header{
+        display: block;
+    }
+    
+}

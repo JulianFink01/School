@@ -1,0 +1,457 @@
+/* Base: */
+@font-face {
+  font-family:Raleway-Bolditalic;
+  src: url("../fonts/raleway-bolditalic-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family:Raleway-Bold;
+  src: url("../fonts/raleway-bold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family:Raleway-Italic;
+  src: url("../fonts/raleway-italic-webfont.woff") format("woff");
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family:Raleway;
+  src: url("../fonts/raleway-regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family:Rokkitt-Bold;
+  src: url("../fonts/rokkitt-bold-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family:Rokkitt;
+  src: url("../fonts/rokkitt-regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("../webfonts/fa-solid-900.eot");
+  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; }
+
+* {
+    margin:0;
+    box-sizing: border-box;
+    line-height: 1.6;
+
+}
+
+:root {
+  --header-color:  rgba(33,34,37,0.9);
+  --orange: #e53;
+  --duration: 0.3s;
+}
+header, main, nav, aside, article, footer, figure, figcaption {
+    display: block;
+    padding: 0;
+}
+
+body{
+  width: 100%;
+  margin: auto;
+  background-color: #ded7d4;
+  color: #333;
+  font-family: Raleway,'Helvetica', sans-serif;
+}
+
+h1{
+  font-weight: normal;
+  font-size: 1em;
+}
+h1,header{
+    font-family: Rokkitt,'Helvetica', sans-serif;
+}
+a{
+  color: #em3;
+  text-decoration: none;
+}
+li{
+  text-decoration: none;
+  line-height: 1em;
+}
+li:hover{
+text-decoration: underline;
+}
+a:link{
+  color: var(--orange);
+}
+p{
+  text-align: justify;
+  hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+#Seitenleiste ul{
+  list-style: none;
+  line-height: normal;
+  padding-left: 0;
+}
+.buy{
+  border: 2px solid #36241F;
+  border-radius: 5px;
+  width: 10em;
+  display: block;
+  text-align: center;
+  color: black !important;
+  font-weight: bold;
+  transition: var(--duration) all ease-in;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  padding: .5em 1em;
+
+}
+.buy:hover{
+  background-color: rgba(238,85,51,0.8);
+  color: white !important;
+}
+article, .box{
+  padding: 5px;
+  margin: 20px 5px 20px 5px;
+  background-color: #fff;
+}
+article{
+  position: relative;
+  padding-bottom: 6rem;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.box-figure{
+  width: 30%;
+  border: 2px;
+  margin: 1em;
+  padding: 1.5rem 1.5rem 6rem 1.5rem !important;
+
+}
+.box-figure img{
+  width: 100%;
+}
+.box-figure figcaption{
+  font-weight: bold;
+  text-align: center;
+}
+
+#figure-left{
+  float: left;
+}
+#figure-right{
+  float: right;
+}
+aside{
+  width: 24%;
+  float: right;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 14vh;}
+main{
+  width: 74%;
+  float: left;
+}
+
+footer{
+  position: relative;
+  text-align: center;
+  background-color: rgba(33,34,37,0.9);
+  color: white;
+  padding: 1.5em;
+}
+footer nav a:link{
+  color: white;
+}
+footer nav a:not(:last-child){
+  border-right: 2px solid white;
+  padding-right: 6px;
+}
+
+#banner{
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  height: 0;
+  padding: 0 0 66% 0;
+  box-sizing: content-box;
+  position: relative;
+}
+#banner div{
+  padding: 5.5vw 4vw;
+  position: absolute;
+  bottom: 0;
+}
+#banner div h1{
+  font-size: 7vw;
+}
+#banner div p{
+  font-size: 4vw;
+}
+#banner div a, #banner div p, #banner div h1{
+  text-shadow: 3px 3px rgba(0,0,0,0.3);
+  color: white;
+}
+#banner div a{
+  background-color: rgba(0,0,0,0.1);
+  transition: var(--duration) all ease-in;
+  font-size: 3vw;
+  border: 3px solid white;
+  border-radius: 25px;
+  padding: 1vw 5vw 1vw 5vw;
+  line-height: 3em;
+}
+#banner div a:hover{
+  background-color: rgba(238,85,51,0.8);
+  color: white;
+}
+
+#content{
+  max-width: 1400px;
+  width: 80%;
+  margin: auto;
+}
+header{
+  background-color:var(--header-color);
+  padding: 0;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+header div nav ul li{
+  text-decoration: none !important;
+  transition: var(--duration) all ease-in;
+}
+header div nav ul li:hover{
+  transform: scale(1.04);
+}
+header div nav ul li a{
+  color:white !important;
+}
+#logo a figure{
+  width: 11rem;
+  padding: 1rem;
+  text-align: center;
+  border-right: 1px #666;
+}
+#logo a figure figcaption{
+  display: block;
+  color:white;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+#menu{
+  width: 100% !important;
+  height: 100% !important;
+
+}
+#menu ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+#menu nav:first-child{
+  font-size: 1.2rem;
+  padding: 1rem 0 1rem 0;
+  border-bottom: 1px #666;
+  float: right;
+}
+#menu nav:last-child{
+  font-size: 1.5rem;
+  padding: 1.5rem 0 1.5rem 0;
+    clear: both;
+}
+#sale{
+  background-color: var(--orange);
+  padding: 1rem;
+  border-radius: 50px;
+}
+#menu ul li{
+padding: 0 1rem 0 1rem;
+}
+#logo a figure img{
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+.product_list{
+  margin: auto;
+  text-decoration: none;
+  display: block;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product_list li{
+  align-self: flex-start;
+  padding: 1rem;
+  width: 33.33%;
+  transition: var(--duration) all ease-in;
+}
+.product_list li:hover{
+  transform: scale(1.04);
+}
+.product_list li a figure img{
+  width: 100%;
+  display: block !important;
+}
+
+.product_list li a figure figcaption{
+  text-align: left;
+  padding: 0 1rem 1rem 1rem;
+  background-color: rgba(33,34,37,0.9);
+  color: white;
+}
+
+.product_list li a:link{
+  display: block;
+}
+.product_list li a:hover{
+      text-decoration: none !important;
+}
+a:link:active{
+  color: inherit;
+}
+
+@media(max-width: 1024px){
+
+  aside{
+    width: 100% !important;
+    display:block;
+  }
+  main{
+    width: 100%;
+  }
+  .product_list li{
+    width: 50%;
+  }
+  .box-figure{
+    width: 100%;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem !important;
+    text-align: center;
+  }
+article h1{
+  font-size: 3.5vh;
+  text-align: center;
+}
+  #figure-left,#figure-right{
+    float: inherit;
+    width: 100%;
+    padding: 0;
+    margin:0;
+  }
+
+}
+#menu nav:last-child ul.visible{
+  transform: translate(0);
+  visibility: visible;
+  box-shadow: rgba(0,0,0,0.6) -9999px 0px 0px 9999px;
+}
+@media (min-width:700px){
+  li.close_menu{
+    display: none;
+  }
+}
+@media(max-width: 700px){
+
+
+  .product_list li{
+    width: 100% !important;
+  }
+  #logo a figure figcaption{
+    font-size: 1rem;
+  }
+   #logo a figure{
+      width: 7rem;
+      padding: 0.5rem;
+    }
+    #logo a figure img{
+        width: 70%;
+      }
+      span{
+        display: none;
+      }
+      #menu nav:last-child::before{
+        content: "\f0c9";
+        font-size: 2rem;
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: normal;
+        font-variant: normal;
+        font-transform: none;
+        line-height: 1;
+        padding: 1rem;
+        margin:0;
+        float: right;
+      }
+      #menu nav:first-child{
+        margin: 0;
+        padding: 0;
+        display: block;
+        float: right;
+      }
+
+  #menu nav:last-child ul{
+    display: block;
+    position: fixed;
+    right: 0;
+    background-color:  var(--header-color);
+    max-width: 100%;
+    min-width: 40%;
+    top: 100%;
+    transform: translate(100%);
+    visibility: hidden;
+    height: 100vh;
+    transition: var(--duration) all ease-in;
+  }
+
+  #menu a.sale{
+    margin: 1rem 0.5rem;
+    display: inline-block;
+  }
+  button{
+    font-size: 100%;
+    font-family: inherit;
+    border: 0;
+    padding: 1rem;
+    background-color: rgba(33,34,37,0);
+    color: white;
+  }
+  button:hover{
+    transform: scale(1);
+  }
+  li.close_menu{
+    text-align: right;
+  }
+  #menu nav:last-child li+li{
+    border-bottom :1px solid #666;
+  }
+
+}
