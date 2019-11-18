@@ -18,7 +18,7 @@
     function hole_eintraege($umgedreht = false)
     {
 
-    $sql= "select * beitraege natural join benutzer";
+    $sql= "select beitraege.titel, beitraege.inhalt, benutzer.vorname, benutzer.nachname, beitraege.datum, from beitraege join benutzer on benutzer.id = beitraege.benutzer_id";
 
 
 
