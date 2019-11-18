@@ -18,16 +18,16 @@
     function hole_eintraege($umgedreht = false)
     {
 
-    $sql= "select beitraege.titel, beitraege.inhalt, benutzer.vorname, benutzer.nachname, beitraege.datum, from beitraege join benutzer on benutzer.id = beitraege.benutzer_id";
+    $sql= "select beitraege.titel, beitraege.inhalt, benutzer.vorname, benutzer.nachname, beitraege.datum from beitraege join benutzer on benutzer.id = beitraege.benutzer_id";
+    $db = getDB();
+    $ergebnis=array();
+    if($db !=null){
+      $erg=$db->query($sql);
+      $ergebnis=$erg->fetchAll();
+    }else{
 
-
-
-
-    	$eintraege = unserialize(file_get_contents(PFAD_EINTRAEGE));
-    	if ($umgedreht === true) {
-    		$eintraege = array_reverse($eintraege);
-    	}
-    	return $eintraege;
+    }
+    	return $ergebnis;
     }
 
     function ist_eingeloggt()
