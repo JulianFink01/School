@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Eintrag anzeigen</title>
+	</head>
+  <table>
+
+    <?php foreach($eintraege as $id => $eintrag){?>
+
+    <tr>
+      <td>Vorname: <?php echo $eintrag['vorname'] ?> </td>
+      <td>Nachname: <?php echo $eintrag['nachname'] ?> </td>
+      <td>Email: <?php echo $eintrag['email'] ?> </td>
+      <td><a href="index.php?aktion=loesche&id=<?php echo $id;?>">X</a></td>
+      <td><a href="index.php?aktion=editiere&id=<?php echo $id;?>">edit</a></td>
+    </tr>
+
+  <?php }?>
+
+  </table>
+</html>
