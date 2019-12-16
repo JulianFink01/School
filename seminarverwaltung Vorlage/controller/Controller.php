@@ -14,9 +14,12 @@ class Controller{
     public function alleST(){
       $this->addContext("seminartermine", Seminartermin::findeAlle());
     }
+    public function zeigeSInfos(){
+      $this->addContext("seminar", Seminar::finde($_GET["s_id"]));
+    }
 
     private function generatePage($template){
-        extract($this->context);
+        extract($this->context);        
         require_once 'view/'.$template.".tpl.php";
 
     }

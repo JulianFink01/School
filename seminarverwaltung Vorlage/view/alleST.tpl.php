@@ -17,7 +17,7 @@ and open the template in the editor.
                 <th><?php echo $seminartermin->getBeginn()?></th>
                 <th><?php echo $seminartermin->getEnde()?></th>
                 <th><?php echo $seminartermin->getRaum()?></th>
-                <th><?php echo $seminartermin->getSeminar()->getTitel()?></th>
+                <th><a href="index.php?aktion=zeigeSInfos&s_id=<?php echo $seminartermin->getSeminar()->getId()?>"><?php echo $seminartermin->getSeminar()->getTitel()?></a></th>
                 <th><a href="index.php?aktion=loescheST&st_id=<?php echo $seminartermin->getId()?>">Löschen</a></th>
             </tr>
             <?php } ?>
